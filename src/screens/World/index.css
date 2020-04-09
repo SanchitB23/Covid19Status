@@ -1,0 +1,20 @@
+.HomeScreenContainer {
+    text-align: center;
+    justify-content: center;
+    padding: 2% 15%;
+}
+
+.InputStyle {
+    border-bottom: 1px solid #ccc;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 40%;
+}
+
+.InputContainer {
+    padding-bottom: 10px;
+    width: 40%;
+    float: right;
+}
+
