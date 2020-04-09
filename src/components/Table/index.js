@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Table from "./table";
+import './index.css'
 
 function Index(props) {
   const [searchValue, setSearchValue] = useState('')
@@ -12,7 +13,7 @@ function Index(props) {
 
   const onChangeSearchInput = (event) => {
     setSearchValue(event.target.value)
-    const filtered = tableData.filter(entry => entry.Country.toLowerCase().includes(event.target.value.toLowerCase()))
+    const filtered = tableData.filter(entry => entry.name.toLowerCase().includes(event.target.value.toLowerCase()))
     setTableData(filtered)
 
     if (event.target.value.length <= 0) {
@@ -23,8 +24,9 @@ function Index(props) {
       <div>
         <div className="InputContainer">
           <div className="input-group mb-3">
-            <input type="text" className="form-control" placeholder="Search By Country"
-                   aria-label="Search By Country"
+            <input type="text" className="form-control"
+                   placeholder={props.world ? "Search By Country" : "Search By State / UT"}
+                   aria-label={props.world ? "Search By Country" : "Search By State / UT"}
                    aria-describedby="button-addon2"
                    value={searchValue}
                    onChange={onChangeSearchInput}
@@ -37,7 +39,7 @@ function Index(props) {
             </div>
           </div>
         </div>
-        <Table data={tableData}/>
+        <Table data={tableData} world={props.world}/>
       </div>
   );
 }

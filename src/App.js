@@ -8,7 +8,9 @@ import store from "./store";
 function App() {
   return (
       <Provider store={store}>
-        <Routes/>
+        <div className="App">
+          <Routes/>
+        </div>
       </Provider>
   )
 }

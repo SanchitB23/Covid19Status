@@ -4,17 +4,18 @@
     padding: 2% 15%;
 }
 
-.InputStyle {
-    border-bottom: 1px solid #ccc;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    width: 40%;
+.GlobalCount {
+    font-weight: bolder;
+    margin: 10px 0;
 }
 
-.InputContainer {
-    padding-bottom: 10px;
-    width: 40%;
-    float: right;
+.GlobalItemContainer {
+    margin: 50px 0;
 }
 
+.LastUpdatedText {
+    text-align: end;
+    font-size: medium;
+    font-weight: bolder;
+    color: #424242;
+}
