@@ -2,7 +2,8 @@
   "name": "covid19",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://SanchitB23.github.io/Covid19Status",
+  "homepage": "http://SanchitB23.github.io/Covid19Status/",
+  "repository": "https://github.com/SanchitB23/Covid19Status/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",

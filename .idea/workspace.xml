@@ -1,11 +1,320 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a3cebd4d-9c44-416f-8c15-db89c6d3d2c4" name="Default Changelist" comment="World Data Table Added -&gt; Live API connected&#10;Mapbox Added">
+      <change afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/covid19.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/covid19.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Keys/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Keys/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Keys/prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Keys/prod.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/Charts/areaChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/Charts/areaChart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/MapBox/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MapBox/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Sass File" />
+        <option value="tsconfig.json" />
+        <option value="SCSS File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Sanchit Bhatnagar &lt;sanbht23@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1aCg25JEZMdplJd0io18yCcsirm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Softwares/NodeJs" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript&#10;JSON" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-canvasjs-chart-samples" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programming Related\Workspace\ReactJs\covid19\src\Views" />
+      <recent name="D:\Programming Related\Workspace\ReactJs\covid19\src\components" />
+      <recent name="D:\Programming Related\Workspace\ReactJs\covid19\src\store\reducers" />
+      <recent name="D:\Programming Related\Workspace\ReactJs\covid19\src\store\actions" />
+      <recent name="D:\Programming Related\Workspace\ReactJs\covid19\src\assets" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.deploy" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3cebd4d-9c44-416f-8c15-db89c6d3d2c4" name="Default Changelist" comment="" />
+      <created>1586244779042</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586244779042</updated>
+      <workItem from="1586244780450" duration="4204000" />
+      <workItem from="1586326261677" duration="98000" />
+      <workItem from="1586326394884" duration="88000" />
+      <workItem from="1586326506357" duration="32463000" />
+      <workItem from="1586427474096" duration="47549000" />
+      <workItem from="1586593807453" duration="8229000" />
+      <workItem from="1586606283798" duration="10077000" />
+      <workItem from="1586623229528" duration="3351000" />
+      <workItem from="1586635369425" duration="1001000" />
+    </task>
+    <task id="LOCAL-00001" summary="World Data Table Added -&gt; Live API connected&#10;Mapbox Added">
+      <created>1586438036238</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586438036238</updated>
+    </task>
+    <task id="LOCAL-00002" summary="World Data Table Added -&gt; Live API connected&#10;Mapbox Added">
+      <created>1586462162131</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586462162132</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Implemented Graphs for India Total Data&#10;Added Header">
+      <created>1586623516185</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586623516185</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="main.yml" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="World Data Table Added -&gt; Live API connected&#10;Mapbox Added" />
+    <MESSAGE value="Implemented Graphs for India Total Data&#10;Added Header" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Graphs for India Total Data&#10;Added Header" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="22" key="#File_Watchers" timestamp="1586277130740">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#File_Watchers/0.0.1366.728@0.0.1366.728" timestamp="1586277130740" />
+    <state x="570" y="200" key="#Notifications" timestamp="1586462411234">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="570" y="200" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1586462411234" />
+    <state x="446" y="161" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586635465910">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="446" y="161" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1586635465909" />
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1586604868771">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586604868771" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586548254069">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586548254069" />
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1586632423475">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586632423475" />
+    <state x="318" y="136" key="EditFileWatcherDialog" timestamp="1586277066072">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="318" y="136" key="EditFileWatcherDialog/0.0.1366.728@0.0.1366.728" timestamp="1586277066072" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1586593848882">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586593848882" />
+    <state width="1345" height="172" key="GridCell.Tab.0.bottom" timestamp="1586636278903">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="172" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586636278903" />
+    <state width="1345" height="172" key="GridCell.Tab.0.center" timestamp="1586636278903">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="172" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586636278903" />
+    <state width="1345" height="172" key="GridCell.Tab.0.left" timestamp="1586636278903">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="172" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586636278903" />
+    <state width="1345" height="172" key="GridCell.Tab.0.right" timestamp="1586636278903">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="172" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586636278903" />
+    <state x="450" y="0" key="RollbackChangesDialog" timestamp="1586612080249">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="450" y="0" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586612080249" />
+    <state x="184" y="6" key="SettingsEditor" timestamp="1586516189647">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586516189647" />
+    <state x="404" y="105" width="552" height="540" key="StructurePopup" timestamp="1586434554418">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="404" y="105" width="552" height="540" key="StructurePopup/0.0.1366.728@0.0.1366.728" timestamp="1586434554418" />
+    <state x="275" y="92" key="Vcs.Push.Dialog.v2" timestamp="1586632443761">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="92" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586632443761" />
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586430020160">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1586430020160" />
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1586550423936">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1586550423936" />
+    <state x="491" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586635259256">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="491" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1586635259256" />
+    <state x="391" y="83" width="583" height="562" key="find.popup" timestamp="1586598166814">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="391" y="83" width="583" height="562" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1586598166814" />
+    <state x="397" y="137" key="git4idea.merge.GitPullDialog" timestamp="1586462458042">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="397" y="137" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1586462458042" />
+    <state x="484" y="264" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1586462709377">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="484" y="264" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586462709377" />
+    <state x="328" y="206" key="git4idea.ui.GitUnstashDialog" timestamp="1586632789991">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="328" y="206" key="git4idea.ui.GitUnstashDialog/0.0.1366.728@0.0.1366.728" timestamp="1586632789991" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1586515605342">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586515605342" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1586636287875">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1586636287875" />
   </component>
 </project>

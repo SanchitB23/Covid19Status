@@ -4,13 +4,14 @@ import CanvasJSReact from '../../assets/canvasjs.react';
 const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 function AreaChart(props) {
+  console.log("Props [[Area Chart]] ", props.data)
   const dataPoint0 = props.data.map((item) => {
     return {y: parseInt(item.count), x: new Date(item.date)}
   })
   const dataPoint1 = props.data.map((item) => {
     return {x: new Date(item.date), y: parseInt(item.newCount)}
   })
-  console.log(dataPoint0)
+  console.log('DataPoint0 [[Area Chart]]', dataPoint0)
   const options = {
     // backgroundColor:'red' todo
     theme: "light2",

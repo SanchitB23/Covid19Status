@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {HashRouter, Route, Switch} from "react-router-dom";
 import HomeScreen from "../screens/World";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -10,8 +10,9 @@ import CountrySpecificData from "../screens/World/CountryWiseScreen";
 
 
 function Routes(props) {
+  // const baseURL = process.env.NODE_ENV === 'development' ?
   return (
-      <BrowserRouter>
+      <HashRouter basename="/">
         <Header/>
         <Switch>
           <Route exact path="/" component={HomeScreen}/>
@@ -21,7 +22,7 @@ function Routes(props) {
           <Route exact path="/india/state/:slug" component={IndianStateScreen}/>
         </Switch>
         <Footer/>
-      </BrowserRouter>
+      </HashRouter>
   );
 }
 
