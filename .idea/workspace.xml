@@ -25,17 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3cebd4d-9c44-416f-8c15-db89c6d3d2c4" name="Default Changelist" comment="World Data Table Added -&gt; Live API connected&#10;Mapbox Added">
-      <change afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/covid19.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/covid19.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Keys/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Keys/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Keys/prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Keys/prod.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/Charts/areaChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/Charts/areaChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/MapBox/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MapBox/index.js" afterDir="false" />
+    <list default="true" id="a3cebd4d-9c44-416f-8c15-db89c6d3d2c4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +141,7 @@
       <workItem from="1586593807453" duration="8229000" />
       <workItem from="1586606283798" duration="10077000" />
       <workItem from="1586623229528" duration="3351000" />
-      <workItem from="1586635369425" duration="1001000" />
+      <workItem from="1586635369425" duration="1731000" />
     </task>
     <task id="LOCAL-00001" summary="World Data Table Added -&gt; Live API connected&#10;Mapbox Added">
       <created>1586438036238</created>
@@ -173,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586623516185</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Possible fix for using env keys in production">
+      <created>1586636479437</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586636479437</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +208,8 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="World Data Table Added -&gt; Live API connected&#10;Mapbox Added" />
     <MESSAGE value="Implemented Graphs for India Total Data&#10;Added Header" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Graphs for India Total Data&#10;Added Header" />
+    <MESSAGE value="Possible fix for using env keys in production" />
+    <option name="LAST_COMMIT_MESSAGE" value="Possible fix for using env keys in production" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -236,10 +235,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586548254069" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1586632423475">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1586636478506">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586632423475" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586636478506" />
     <state x="318" y="136" key="EditFileWatcherDialog" timestamp="1586277066072">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -276,10 +275,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="404" y="105" width="552" height="540" key="StructurePopup/0.0.1366.728@0.0.1366.728" timestamp="1586434554418" />
-    <state x="275" y="92" key="Vcs.Push.Dialog.v2" timestamp="1586632443761">
+    <state x="275" y="92" key="Vcs.Push.Dialog.v2" timestamp="1586636482773">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="92" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586632443761" />
+    <state x="275" y="92" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586636482773" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586430020160">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

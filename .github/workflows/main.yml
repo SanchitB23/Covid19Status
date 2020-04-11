@@ -20,7 +20,7 @@ jobs:
         npm install
         npm run-script build
       env:
-        MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
+        REACT_APP_MAPBOX_TOKEN: ${{ secrets.REACT_APP_MAPBOX_TOKEN }}
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
