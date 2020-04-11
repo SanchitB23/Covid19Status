@@ -1,7 +1,8 @@
 import {combineReducers} from "redux";
-import worldData from "./World";
+import worldData from "./worldReducer";
+import indiaData from "./indiaReducer";
 
 export default combineReducers({
-  temp: "",
-  worldData
+  worldData,
+  indiaData
 })

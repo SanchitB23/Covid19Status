@@ -1,1 +1,2 @@
-export * as worldActions from './World/worldActions'
+export * as worldActions from './worldActions'
+export * as IndiaActions from './indiaActions'

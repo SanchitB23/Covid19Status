@@ -1,15 +1,18 @@
-import React, {useState} from 'react';
-import Table from "./table";
+import React, {useCallback, useEffect, useState} from 'react';
+import Table from "../../Views/table";
 import './index.css'
 
 function Index(props) {
   const [searchValue, setSearchValue] = useState('')
   const [tableData, setTableData] = useState(props.data)
 
-  function clearButtonHandler() {
+  const clearButtonHandler = useCallback(() => {
     setTableData(props.data)
     setSearchValue('')
-  }
+  }, [props.data])
+
+  useEffect(() => () => clearButtonHandler(), [clearButtonHandler]) //cleanup for unmount
+
 
   const onChangeSearchInput = (event) => {
     setSearchValue(event.target.value)
@@ -20,8 +23,9 @@ function Index(props) {
       setTableData(props.data)
     }
   }
+
   return (
-      <div>
+      <div style={{padding: '20px'}}>
         <div className="InputContainer">
           <div className="input-group mb-3">
             <input type="text" className="form-control"

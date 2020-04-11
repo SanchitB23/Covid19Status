@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './table.css'
-import addCommas from "../../functions/addCommas";
+import addCommas from "../functions/addCommas";
 
 function Table(props) {
   const [sortState, setSortState] = useState({
@@ -45,23 +45,24 @@ function Table(props) {
             Deceased {sortState.col === 'd' ? sortState.order ? <span><i className="fas fa-sort-down"/></span> :
               <span><i className="fas fa-sort-up"/></span> : ''}
           </th>
-
         </tr>
         </thead>
         <tbody className="TableBody">
         {props.data
+            // eslint-disable-next-line array-callback-return
             .sort((a, b) => {
+              // eslint-disable-next-line default-case
               switch (sortState.col) {
                 case "c":
                   if (sortState.order) {
-                    return b.totalConfirmed > a.totalConfirmed ? 1 : -1
+                    return b.totalConfirmed - a.totalConfirmed
                   } else
-                    return b.totalConfirmed < a.totalConfirmed ? 1 : -1
+                    return a.totalConfirmed - b.totalConfirmed
                 case 'r':
                   if (sortState.order) {
-                    return b.totalRecovered < a.totalRecovered ? 1 : -1
+                    return b.totalRecovered - a.totalRecovered
                   } else
-                    return b.totalRecovered > a.totalRecovered ? 1 : -1
+                    return a.totalRecovered - b.totalRecovered
                 case 'n':
                   if (sortState.order) {
                     return b.name < a.name ? 1 : -1
@@ -69,12 +70,14 @@ function Table(props) {
                     return b.name > a.name ? 1 : -1
                 case 'd':
                   if (sortState.order) {
-                    return b.totalDeaths < a.totalDeaths ? 1 : -1
+                    return b.totalDeath - a.totalDeath
                   } else
-                    return b.totalDeaths > a.totalDeaths ? 1 : -1
+                    return a.totalDeath - b.totalDeath
               }
             })
             .map((data, i) => {
+              if (!props.world && data.name === 'Total') return <tr key={i}/>
+              // console.log(data.newConfirmed)
               return (
                   <tr key={i} onClick={onClickRow.bind(this, data.slug)}>
                     <td>{data.name}</td>
@@ -83,13 +86,12 @@ function Table(props) {
                         <i className="fas fa-long-arrow-alt-up"/> {addCommas(data.newConfirmed.toString())}
                       </span> {addCommas(data.totalConfirmed.toString())}
                     </td>
-                    {/*<td>{data.totalConfirmed}</td>*/}
                     <td className="table-success"><span className="LatestCount">
                         <i className="fas fa-long-arrow-alt-up"/> {addCommas(data.newRecovered.toString())}
                       </span> {addCommas(data.totalRecovered.toString())}</td>
                     <td className="table-secondary"><span className="LatestCount">
-                        <i className="fas fa-long-arrow-alt-up"/> {addCommas(data.newDeaths.toString())}
-                      </span> {addCommas(data.totalDeaths.toString())}</td>
+                        <i className="fas fa-long-arrow-alt-up"/> {addCommas(data.newDeath.toString())}
+                      </span> {addCommas(data.totalDeath.toString())}</td>
                   </tr>
               )
             })}

@@ -1,4 +1,4 @@
-import {WORLD_DATA} from "../../../constants/action-types";
+import {WORLD_DATA} from "../../constants/action-types";
 
 const initialState = {
   global: {},

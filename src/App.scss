@@ -7,9 +7,33 @@
 .App {
   text-align: center;
   justify-content: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
   font-family: 'Roboto', sans-serif;
   color: #424242;
   background-color: #FAFAFA;
+}
+
+.TableScreenContainer {
+  margin-top: 20px;
+}
+
+.HomeScreenContainer {
+  text-align: center;
+  justify-content: center;
+  padding: 2% 5%;
+}
+
+.GlobalCount {
+  font-weight: bolder;
+  margin: 10px 0;
+}
+
+.GlobalItemContainer {
+  margin: 50px 0;
+}
+
+.LastUpdatedText {
+  text-align: end;
+  font-size: medium;
+  font-weight: bolder;
+  color: #424242;
 }
