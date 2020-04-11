@@ -1,3 +1,5 @@
+![Deploy to GitHub Pages](https://github.com/SanchitB23/Covid19Status/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
