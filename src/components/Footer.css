@@ -1,7 +1,12 @@
-a {
+.Footer-Link {
     color: #E0E0E0;
 }
 
-a:hover {
+.Footer-Link:hover {
     color: #FAFAFA;
+}
+
+.Footer-Text {
+    max-width: 500px;
+    padding-top: 10px;
 }

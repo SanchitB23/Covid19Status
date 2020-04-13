@@ -7,10 +7,6 @@ function Table(props) {
     col: 'c', order: true
   }) //true == desc
 
-  const onClickRow = (slug) => {
-    console.log(slug)
-  }
-
   return (
       <table className="table table-hover table-striped table-responsive-md">
         <thead style={{color: '#212121'}}>
@@ -72,7 +68,7 @@ function Table(props) {
             .map((data, i) => {
               if (!props.world && data.name === 'Total') return <tr key={i}/>
               return (
-                  <tr key={i} onClick={onClickRow.bind(this, data.slug)}>
+                  <tr key={i} onClick={() => props.onRowClick(data.slug)}>
                     <td>{data.name}</td>
                     <td className="table-danger">
                       <span className="LatestCount">

@@ -14,8 +14,12 @@ function Footer(props) {
 
               <div className="col-md-6 mt-md-0 mt-3">
 
-                <h5 className="text-uppercase">Footer Content</h5>
-                <p>Here you can use rows and columns to organize your footer content.</p>
+                <h5 className="text-uppercase">
+                  <img src={require('../assets/icons/LogoWithTextWSVG.svg')} alt="Logo" height={50} width={50}/> Covid
+                  19 Latest Updates of the World</h5>
+                <p className="Footer-Text">With the Pandemic affecting everyone around the globe, we want you to stay
+                  updated with the live
+                  count and updates of India and the World.</p>
 
               </div>
 
@@ -27,16 +31,16 @@ function Footer(props) {
 
                 <ul className="list-unstyled">
                   <li>
-                    <Link to={"/"}>About Us</Link>
+                    <Link className="Footer-Link" to={"/"}>About Us</Link>
                   </li>
                   <li>
-                    <Link to={"/"}>Mapbox</Link>
+                    <Link className="Footer-Link" to={"/mapbox"}>Mapbox</Link>
                   </li>
                   <li>
-                    <Link to={"/"}>Helpful Links</Link>
+                    <Link className="Footer-Link" to={"/"}>Helpful Links</Link>
                   </li>
                   <li>
-                    <Link to={"/"}>Link to Repository</Link>
+                    <a href="https://github.com/SanchitB23/Covid19Status" className="Footer-Link">Link to Repository</a>
                   </li>
                 </ul>
 
@@ -48,16 +52,16 @@ function Footer(props) {
 
                 <ul className="list-unstyled">
                   <li>
-                    <Link to={"/"}>Github</Link>
+                    <Link className="Footer-Link" to={"/"}>Github</Link>
                   </li>
                   <li>
-                    <Link to={"/"}>StackOverflow</Link>
+                    <Link className="Footer-Link" to={"/"}>StackOverflow</Link>
                   </li>
                   <li>
-                    <Link to={"/"}>LinkedIn</Link>
+                    <Link className="Footer-Link" to={"/"}>LinkedIn</Link>
                   </li>
                   <li>
-                    <Link to={"/"}>Email ID</Link>
+                    <Link className="Footer-Link" to={"/"}>Email ID</Link>
                   </li>
                 </ul>
 
@@ -68,7 +72,7 @@ function Footer(props) {
           </div>
 
           <div className="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="https://github.com/SanchitB23"> SanchitB23</a>
+            <a className="Footer-Link" href="https://github.com/SanchitB23">SanchitB23</a>
           </div>
 
         </footer>

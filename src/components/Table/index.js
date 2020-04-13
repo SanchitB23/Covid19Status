@@ -1,12 +1,12 @@
 import React, {useCallback, useEffect, useState} from 'react';
-// import {useHistory} from "react-router-dom";
+import {useHistory} from "react-router-dom";
 import Table from "../../Views/table";
 import './index.css'
 
 function TableComponent(props) {
   const [searchValue, setSearchValue] = useState('')
   const [tableData, setTableData] = useState(props.data)
-  // const history = useHistory();
+  const history = useHistory();
   const clearButtonHandler = useCallback(() => {
     setTableData(props.data)
     setSearchValue('')
@@ -14,6 +14,11 @@ function TableComponent(props) {
 
   useEffect(() => () => clearButtonHandler(), [clearButtonHandler]) //cleanup for unmount
 
+  const onRowClickHandler = (slug) => {
+    console.log(slug)
+    props.world ? history.push('/country/' + slug)
+        : history.push('/india/state/' + slug)
+  }
 
   const onChangeSearchInput = (event) => {
     setSearchValue(event.target.value)
@@ -44,7 +49,7 @@ function TableComponent(props) {
             </div>
           </div>
         </div>
-        <Table data={tableData} world={props.world}/>
+        <Table data={tableData} world={props.world} onRowClick={onRowClickHandler}/>
       </div>
   );
 }

@@ -1,7 +1,7 @@
 // todo
-//  Add Links to Footer
+//  Add Links to Footer && Add better Text to footer
 //  Add Charts to Global
-//  Create Activity Loader and Add to Places
+//  DONE Create Activity Loader and Add to Places
 //  Error Handling
 //  Add Header Button to Display All Charts - Global / India
 //  Create separate Country/State wise Screen

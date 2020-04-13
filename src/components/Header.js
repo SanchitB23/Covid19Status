@@ -4,8 +4,9 @@ import {NavLink} from "react-router-dom";
 function Header(props) {
   return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <NavLink to="/" className="navbar-brand" href="#"><i className="fas fa-shield-virus fa-2x"
-                                                             style={{color: 'red'}}/></NavLink>
+        <NavLink to="/" className="navbar-brand" href="#">
+          <img src={require('../assets/icons/LogoWithTextWSVG.svg')} alt="Logo" height={40} width={40}/>
+        </NavLink>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"/>
