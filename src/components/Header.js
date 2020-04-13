@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 
 function Header(props) {
   return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light navbar-light navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <NavLink to="/" className="navbar-brand" href="#"><i className="fas fa-shield-virus fa-2x"
                                                              style={{color: 'red'}}/></NavLink>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -16,7 +16,7 @@ function Header(props) {
               <NavLink exact to="/" className="nav-link" href="#">Home</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/mapbox" className="nav-link" href="#">MapBox</NavLink>
+              <NavLink to="/mapbox" className="nav-link" href="#">World Map</NavLink>
             </li>
             <li className="nav-item">
               <NavLink to="/india" className="nav-link" href="#">India Updates</NavLink>

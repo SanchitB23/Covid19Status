@@ -7,6 +7,7 @@ import DisplayCumulativeData from "../../components/DisplayCumulativeData";
 import CumulativeTimeSeriesChart from "../../components/CumulativeTimeSeriesChart";
 import CumulativeTimeSeries from "../../model/CumulativeTimeSeries";
 import moment from "moment";
+import Loading from "../../components/Loading";
 
 function IndiaHome(props) {
 
@@ -15,8 +16,6 @@ function IndiaHome(props) {
     dispatch(fetchIndiaData())
   }, [dispatch])
   const {statewise, timeseries} = useSelector(state => state.indiaData)
-  // console.log(timeseries)
-
   const tableData = statewise
       .map(item => new TableItem(
           item.state,
@@ -41,16 +40,14 @@ function IndiaHome(props) {
           )
       )
   )
-  // const temp = timeSeries.map((i) => i.getRecoveredData)
-  // console.log(temp)
   return (
       <div className="HomeScreenContainer">
         {
-          tableData.length > 0 && (
+          tableData.length > 0 ? (
               <div>
                 <div>
                   <div className="LastUpdatedText">Last Updated
-                    : {new Date(Date.parse(statewise[0].lastupdatedtime)).toLocaleString()}</div>
+                    : {statewise[0].lastupdatedtime}</div>
                   <DisplayCumulativeData data={tableData[0]} world={false}/>
                   <CumulativeTimeSeriesChart data={timeSeries}/>
                 </div>
@@ -58,7 +55,7 @@ function IndiaHome(props) {
                   <Table data={tableData} world={false}/>
                 </div>
               </div>
-          )
+          ) : <Loading headerSize='large' sizeDef={200}/>
         }
       </div>
   );

@@ -20,12 +20,6 @@ function Table(props) {
               <span><i className="fas fa-sort-down"/></span> :
               <span><i className="fas fa-sort-up"/></span> : ''}
           </th>
-          {/*
-          onClick={() => setSortState(state =>
-              state.col === 'c' && state.type === 'down' ?
-                  {col: 'c', type: 'up'} : {col: 'c', type: 'down'}
-          )}
-*/}
           <th scope="col" className="table-danger"
               onClick={() => setSortState(state => ({col: 'c', order: !state.order}))}>
             Confirmed {sortState.col === 'c' ? sortState.order ? <span><i className="fas fa-sort-down"/></span> :
@@ -77,7 +71,6 @@ function Table(props) {
             })
             .map((data, i) => {
               if (!props.world && data.name === 'Total') return <tr key={i}/>
-              // console.log(data.newConfirmed)
               return (
                   <tr key={i} onClick={onClickRow.bind(this, data.slug)}>
                     <td>{data.name}</td>

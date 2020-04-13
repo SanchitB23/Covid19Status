@@ -12,5 +12,6 @@
     <orderEntry type="library" name="popper.js" level="application" />
     <orderEntry type="library" name="d040e61efe" level="application" />
     <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="@types/react-router-dom" level="application" />
   </component>
 </module>

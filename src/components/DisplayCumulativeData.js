@@ -1,10 +1,9 @@
 import React from 'react';
 import addCommas from "../functions/addCommas";
 
-// todo Change Design
 function DisplayCumulativeData({data, world}) {
   return (
-      <div>
+      <React.Fragment>
         <div className="GlobalItemContainer">
           <h1>Total Corona Virus Cases {world ? 'Globally' : 'in India'}</h1>
           <h1 className="GlobalCount" style={{color: 'red'}}>{addCommas(data.totalConfirmed.toString())}</h1>
@@ -25,7 +24,7 @@ function DisplayCumulativeData({data, world}) {
           <h2>New Recovered</h2>
           <h2>{addCommas(data.newRecovered.toString())}</h2>
         </div>
-      </div>
+      </React.Fragment>
   );
 }
 

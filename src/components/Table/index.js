@@ -1,8 +1,9 @@
 import React, {useCallback, useEffect, useState} from 'react';
+import {useHistory} from "react-router-dom";
 import Table from "../../Views/table";
 import './index.css'
 
-function Index(props) {
+function TableComponent(props) {
   const [searchValue, setSearchValue] = useState('')
   const [tableData, setTableData] = useState(props.data)
 
@@ -48,4 +49,4 @@ function Index(props) {
   );
 }
 
-export default Index;
+export default TableComponent;

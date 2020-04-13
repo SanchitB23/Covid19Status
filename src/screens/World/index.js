@@ -1,21 +1,19 @@
-import React, {useEffect} from 'react';
+import React, {useCallback, useEffect} from 'react';
 import Table from "../../components/Table";
 import {useDispatch, useSelector} from "react-redux";
 import {fetchWorldData} from "../../store/actions/worldActions";
 import TableItem from "../../model/Table";
 import DisplayCumulativeData from "../../components/DisplayCumulativeData";
-
-// function renderTotalData(data) {
-//   return (
-//
-//   )
-// }
+import Loading from "../../components/Loading";
 
 function HomeScreen(props) {
   const dispatch = useDispatch();
-  useEffect(() => {
+  const fetchData = useCallback(() => {
     dispatch(fetchWorldData())
   }, [dispatch])
+  useEffect(() => {
+    fetchData()
+  }, [fetchData])
 
   const worldData = useSelector(state => state.worldData)
 
@@ -29,7 +27,6 @@ function HomeScreen(props) {
       item.NewDeaths,
       item.Slug
   ))
-  console.log(worldData.global)
   const cumulativeData = new TableItem(
       'country',
       worldData.global.TotalConfirmed,
@@ -42,7 +39,7 @@ function HomeScreen(props) {
   )
   return (
       <div className="HomeScreenContainer">
-        {worldData.countries.length > 0 && (
+        {worldData.countries.length > 0 ? (
             <div>
               <div>
                 <div className="LastUpdatedText">Last Updated
@@ -51,7 +48,7 @@ function HomeScreen(props) {
               </div>
               <div id="world-table" className="TableScreenContainer"><Table data={data} world={true}/></div>
             </div>
-        )}
+        ) : <Loading headerSize='large' sizeDef={200}/>}
       </div>
   );
 }

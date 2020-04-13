@@ -13,24 +13,17 @@ function AreaChart(props) {
   })
   console.log('DataPoint0 [[Area Chart]]', dataPoint0)
   const options = {
-    // backgroundColor:'red' todo
     theme: "light2",
     height: 300,
     // width: 400,
     zoomEnabled: true,
     animationEnabled: true,
     title: {
-      text: props.title //temp
+      text: props.title
     },
     axisX: {
       valueFormatString: 'D MMM',
     },
-    // axisY: {
-    //   interval: 2000, //fixme not updating accordingly
-    // },
-    // subtitles: [{
-    //   text: "GBP & USD to INR" //temp removable
-    // }],
     toolTip: {
       shared: true
     },
