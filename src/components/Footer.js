@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './Footer.css'
+import {Link} from "react-router-dom";
 
 function Footer(props) {
   return (
@@ -26,16 +27,16 @@ function Footer(props) {
 
                 <ul className="list-unstyled">
                   <li>
-                    <a href="#">About Us</a>
+                    <Link to={"/"}>About Us</Link>
                   </li>
                   <li>
-                    <a href="#">Mapbox</a>
+                    <Link to={"/"}>Mapbox</Link>
                   </li>
                   <li>
-                    <a href="#">Helpful Links</a>
+                    <Link to={"/"}>Helpful Links</Link>
                   </li>
                   <li>
-                    <a href="#">Link to Repository</a>
+                    <Link to={"/"}>Link to Repository</Link>
                   </li>
                 </ul>
 
@@ -47,16 +48,16 @@ function Footer(props) {
 
                 <ul className="list-unstyled">
                   <li>
-                    <a href="#">Github</a>
+                    <Link to={"/"}>Github</Link>
                   </li>
                   <li>
-                    <a href="#">StackOverflow</a>
+                    <Link to={"/"}>StackOverflow</Link>
                   </li>
                   <li>
-                    <a href="#">LinkedIn</a>
+                    <Link to={"/"}>LinkedIn</Link>
                   </li>
                   <li>
-                    <a href="#">Email ID</a>
+                    <Link to={"/"}>Email ID</Link>
                   </li>
                 </ul>
 

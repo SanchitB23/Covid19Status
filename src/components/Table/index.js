@@ -1,12 +1,12 @@
 import React, {useCallback, useEffect, useState} from 'react';
-import {useHistory} from "react-router-dom";
+// import {useHistory} from "react-router-dom";
 import Table from "../../Views/table";
 import './index.css'
 
 function TableComponent(props) {
   const [searchValue, setSearchValue] = useState('')
   const [tableData, setTableData] = useState(props.data)
-
+  // const history = useHistory();
   const clearButtonHandler = useCallback(() => {
     setTableData(props.data)
     setSearchValue('')
