@@ -12,7 +12,7 @@ function Footer(props) {
 
             <div className="row">
 
-              <div className="col-md-6 mt-md-0 mt-3">
+              <div className="col-md-5 mt-md-0 mt-3">
 
                 <h5 className="text-uppercase">
                   <img src={require('../assets/icons/LogoWithTextWSVG.svg')} alt="Logo" height={50} width={50}/> Covid
@@ -66,7 +66,11 @@ function Footer(props) {
                 </ul>
 
               </div>
-
+              <div className="col-md-1 mb-md-0 mb-3 align-self-center">
+                <div className="card text-center Go-Top" onClick={() => window.scroll(0, 0)}>
+                  Go to Top
+                </div>
+              </div>
             </div>
 
           </div>

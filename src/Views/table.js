@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './table.css'
 import addCommas from "../functions/addCommas";
+import * as colors from "../constants/colors";
 
 function Table(props) {
   const [sortState, setSortState] = useState({
@@ -17,6 +18,7 @@ function Table(props) {
               <span><i className="fas fa-sort-up"/></span> : ''}
           </th>
           <th scope="col" className="table-danger"
+              style={{backgroundColor: colors.confirmed[1], color: 'white', letterSpacing: '1px'}}
               onClick={() => setSortState(state => ({col: 'c', order: !state.order}))}>
             Confirmed {sortState.col === 'c' ? sortState.order ? <span><i className="fas fa-sort-down"/></span> :
               <span><i className="fas fa-sort-up"/></span> : ''}
@@ -25,12 +27,14 @@ function Table(props) {
           {/*<th scope="col" className="table-primary">Active</th>*/}
 
           <th scope="col" className="table-success"
+              style={{backgroundColor: colors.recovered[1], color: 'white', letterSpacing: '1px'}}
               onClick={() => setSortState(state => ({col: 'r', order: !state.order}))}>
             Recovered {sortState.col === 'r' ? sortState.order ? <span><i className="fas fa-sort-down"/></span> :
               <span><i className="fas fa-sort-up"/></span> : ''}
           </th>
 
           <th scope="col" className="table-secondary"
+              style={{backgroundColor: colors.death[1], color: 'white', letterSpacing: '1px'}}
               onClick={() => setSortState(state => ({col: 'd', order: !state.order}))}>
             Deceased {sortState.col === 'd' ? sortState.order ? <span><i className="fas fa-sort-down"/></span> :
               <span><i className="fas fa-sort-up"/></span> : ''}
@@ -68,17 +72,19 @@ function Table(props) {
             .map((data, i) => {
               if (!props.world && data.name === 'Total') return <tr key={i}/>
               return (
-                  <tr key={i} onClick={() => props.onRowClick(data.slug)}>
+                  <tr key={i} onClick={() => props.onRowClick(props.world ? data.slug : data.name, data.slug)}>
                     <td>{data.name}</td>
-                    <td className="table-danger">
+                    <td className="table-danger" style={{backgroundColor: colors.confirmed[1], color: 'white'}}>
                       <span className="LatestCount">
                         <i className="fas fa-long-arrow-alt-up"/> {addCommas(data.newConfirmed.toString())}
                       </span> {addCommas(data.totalConfirmed.toString())}
                     </td>
-                    <td className="table-success"><span className="LatestCount">
+                    <td className="table-success" style={{backgroundColor: colors.recovered[1], color: 'white'}}><span
+                        className="LatestCount">
                         <i className="fas fa-long-arrow-alt-up"/> {addCommas(data.newRecovered.toString())}
                       </span> {addCommas(data.totalRecovered.toString())}</td>
-                    <td className="table-secondary"><span className="LatestCount">
+                    <td className="table-secondary" style={{backgroundColor: colors.death[1], color: 'white'}}><span
+                        className="LatestCount">
                         <i className="fas fa-long-arrow-alt-up"/> {addCommas(data.newDeath.toString())}
                       </span> {addCommas(data.totalDeath.toString())}</td>
                   </tr>

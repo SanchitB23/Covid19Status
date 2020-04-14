@@ -2,11 +2,15 @@ import React, {useCallback, useEffect, useState} from 'react';
 import {useHistory} from "react-router-dom";
 import Table from "../../Views/table";
 import './index.css'
+import {useDispatch} from "react-redux";
+import {fetchIndianStates} from "../../store/actions/indiaActions";
 
 function TableComponent(props) {
   const [searchValue, setSearchValue] = useState('')
   const [tableData, setTableData] = useState(props.data)
   const history = useHistory();
+  const dispatch = useDispatch();
+
   const clearButtonHandler = useCallback(() => {
     setTableData(props.data)
     setSearchValue('')
@@ -14,10 +18,12 @@ function TableComponent(props) {
 
   useEffect(() => () => clearButtonHandler(), [clearButtonHandler]) //cleanup for unmount
 
-  const onRowClickHandler = (slug) => {
-    console.log(slug)
+
+  const onRowClickHandler = (name, slug) => {
+    if (props.world) console.log("Country Data")//dispatch(fetchIndianStates)
+    else dispatch(fetchIndianStates(name, slug))
     props.world ? history.push('/country/' + slug)
-        : history.push('/india/state/' + slug)
+        : history.push('/india/state/' + name)
   }
 
   const onChangeSearchInput = (event) => {

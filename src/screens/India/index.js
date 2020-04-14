@@ -15,7 +15,7 @@ function IndiaHome(props) {
   useEffect(() => {
     dispatch(fetchIndiaData())
   }, [dispatch])
-  const {statewise, timeseries} = useSelector(state => state.indiaData)
+  const {statewise, timeseries} = useSelector(state => state.indiaData.home)
   const tableData = statewise
       .map(item => new TableItem(
           item.state,
@@ -25,7 +25,7 @@ function IndiaHome(props) {
           item.deltarecovered,
           item.deaths,
           item.deltadeaths,
-          item.state
+          item.statecode
           )
       )
   const timeSeries = timeseries.map((item) => (

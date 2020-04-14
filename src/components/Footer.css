@@ -10,3 +10,15 @@
     max-width: 500px;
     padding-top: 10px;
 }
+
+.Go-Top {
+    background-color: #424242;
+    color: white;
+}
+
+.Go-Top:hover {
+    background-color: #FAFAFA;
+    color: #212121;
+    text-decoration: none;
+    cursor: pointer;
+}

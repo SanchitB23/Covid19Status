@@ -3,56 +3,47 @@ import CanvasJSReact from '../../assets/canvasjs.react';
 
 const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
-function AreaChart(props) {
-  console.log("Props [[Area Chart]] ", props.data)
-  const dataPoint0 = props.data.map((item) => {
-    return {y: parseInt(item.count), x: new Date(item.date)}
-  })
-  const dataPoint1 = props.data.map((item) => {
-    return {x: new Date(item.date), y: parseInt(item.newCount)}
-  })
-  console.log('DataPoint0 [[Area Chart]]', dataPoint0)
+function ChartForIndianStates(props) {
+
   const options = {
     theme: "light2",
-    height: 300,
+    height: 200,
     // width: 400,
-    zoomEnabled: true,
     animationEnabled: true,
-    title: {
-      text: props.title
-    },
     axisX: {
-      valueFormatString: 'D MMM',
+      valueFormatString: " ",
+    },
+    axisY: {
+      valueFormatString: " ",
     },
     toolTip: {
       shared: true
     },
     data: [
       {
-        type: "area",
+        type: "line",
         markerSize: 5,
         name: "Total",
+        color: props.color[1],
+        // axisYType: "secondary",
+        // showInLegend: true,
+        xValueType: 'dateTime',
+        xValueFormatString: "D MMM",
+        // yValueFormatString: "#",
+        // mousemove: (e) => console.log('mouseover', e),
+        dataPoints: props.total,
+      },
+      {
+        type: "column",
+        name: "new",
         color: props.color[0],
         // axisYType: "secondary",
         // showInLegend: true,
         xValueType: 'dateTime',
         xValueFormatString: "D MMM",
         // yValueFormatString: "#",
-        mousemove: (e) => console.log('mouseover', e),
-        dataPoints: dataPoint0,
-      },
-      {
-        type: "area",
-        name: "new",
-        color: props.color[1],
-
-        // axisYType: "secondary",
-        // showInLegend: true,
-        xValueType: 'dateTime',
-        xValueFormatString: "D MMM",
-        // yValueFormatString: "#",
         // mouseover: (e) => console.log('mouseover', e),
-        dataPoints: dataPoint1
+        dataPoints: props.daily
       }
     ]
   }
@@ -61,4 +52,4 @@ function AreaChart(props) {
   );
 }
 
-export default AreaChart;
+export default ChartForIndianStates;
