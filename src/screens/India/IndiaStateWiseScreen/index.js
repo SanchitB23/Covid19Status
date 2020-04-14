@@ -9,7 +9,7 @@ import addCommas from "../../../functions/addCommas";
 
 function IndianStateScreen(props) {
   const {name} = useParams()
-  const {stateData, stateTimeLine} = useSelector(state => state.indiaData.statewise)
+  const {stateTimeLine} = useSelector(state => state.indiaData.statewise)
 
   const stateTotal = useSelector(state => state.indiaData.home.statewise.filter(
       item => item.state.toLowerCase() === name.toLowerCase()

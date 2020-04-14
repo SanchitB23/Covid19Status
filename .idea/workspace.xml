@@ -25,30 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3cebd4d-9c44-416f-8c15-db89c6d3d2c4" name="Default Changelist" comment="Minor Fixes, Added statewiseIndia Screen">
-      <change afterPath="$PROJECT_DIR$/src/Views/Charts/chartForIndianStates.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/colors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/India/IndiaStateWiseScreen/statewiseIndia.css" afterDir="false" />
+    <list default="true" id="a3cebd4d-9c44-416f-8c15-db89c6d3d2c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/Charts/areaChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/Charts/areaChartForHome.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/canvasjs.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/canvasjs.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/canvasjs.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/canvasjs.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CumulativeTimeSeriesChart.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CumulativeTimeSeriesChart.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CumulativeTimeSeriesChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CumulativeTimeSeriesChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DisplayCumulativeData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DisplayCumulativeData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Table/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/action-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/action-types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/India/IndiaStateWiseScreen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/India/IndiaStateWiseScreen/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/India/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/India/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/indiaActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/indiaActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/indiaReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/indiaReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +149,7 @@
       <workItem from="1586684849332" duration="2296000" />
       <workItem from="1586687202303" duration="1253000" />
       <workItem from="1586697686367" duration="20453000" />
-      <workItem from="1586783629762" duration="23028000" />
+      <workItem from="1586783629762" duration="24016000" />
     </task>
     <task id="LOCAL-00001" summary="World Data Table Added -&gt; Live API connected&#10;Mapbox Added">
       <created>1586438036238</created>
@@ -228,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586771962138</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Minor Fixes, Added statewiseIndia Screen">
+      <created>1586870457621</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586870457621</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,10 +287,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586864340502" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1586870130480">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1586870456346">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586870130480" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586870456346" />
     <state x="129" y="54" key="DiffContextDialog" timestamp="1586761963294">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -349,10 +335,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1586790477160" />
-    <state x="275" y="92" key="Vcs.Push.Dialog.v2" timestamp="1586771974700">
+    <state x="275" y="92" key="Vcs.Push.Dialog.v2" timestamp="1586870459891">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="92" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586771974700" />
+    <state x="275" y="92" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586870459891" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586430020160">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
