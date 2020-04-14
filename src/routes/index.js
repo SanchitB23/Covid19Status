@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
 import HomeScreen from "../screens/World";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -19,6 +19,9 @@ function Routes(props) {
           <Route exact path="/mapbox" component={MapBox}/>
           <Route exact path="/india" component={IndiaHome}/>
           <Route exact path="/india/state/:name" component={IndianStateScreen}/>
+          <Route path="*">
+            <Redirect to="/"/>
+          </Route>
         </Switch>
         <Footer/>
       </BrowserRouter>

@@ -1,7 +1,7 @@
 {
   "name": "covid19",
   "description": "Get Latest Updates of the Novel Coronavirus",
-  "version": "0.2.1",
+  "version": "0.3.2",
   "private": true,
   "homepage": "http://SanchitB23.github.io/Covid19Status/",
   "repository": "https://github.com/SanchitB23/Covid19Status/",

@@ -5,13 +5,13 @@
 //  Error Handling
 //  Add Header Button to Display All Charts - Global / India
 //  Create separate Country/State wise Screen
-//  Add Active in [[table]] for indian total data
-//  think about data for state wise India and Country wise Data
+//  DONE Add Active in [[table]] for indian total data
+//  DONE think about data for state wise India and Country wise Data
 // idea
 //  Change Total Cases Layout [[Cumulative Data]]
-//  Change Color of Charts
+//  DONE Change Color of Charts
 //  Make Charts Responsive with respect to each other
-//  [[India Home JSON]] tested data study and implement
+//  DONE [[India Home JSON]] tested data study and implement
 //  Latest Updates India
 //  Helpful Links Page and Nav bar Button
 //  marquee for quick tips etc.

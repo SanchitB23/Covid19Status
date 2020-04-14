@@ -25,14 +25,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3cebd4d-9c44-416f-8c15-db89c6d3d2c4" name="Default Changelist" comment="Crash fix">
+    <list default="true" id="a3cebd4d-9c44-416f-8c15-db89c6d3d2c4" name="Default Changelist" comment="Minor Fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/colors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/colors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/India/IndiaStateWiseScreen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/India/IndiaStateWiseScreen/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/India/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/India/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +152,7 @@
       <workItem from="1586684849332" duration="2296000" />
       <workItem from="1586687202303" duration="1253000" />
       <workItem from="1586697686367" duration="20453000" />
-      <workItem from="1586783629762" duration="37749000" />
+      <workItem from="1586783629762" duration="38772000" />
     </task>
     <task id="LOCAL-00001" summary="World Data Table Added -&gt; Live API connected&#10;Mapbox Added">
       <created>1586438036238</created>
@@ -226,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586871437070</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fixed India Table Data&#10;Added Province Data of Indian States">
+      <created>1586899031625</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586899031625</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +274,8 @@
     <MESSAGE value="Updated Icons and Footer + Minor changes" />
     <MESSAGE value="Minor Fixes, Added statewiseIndia Screen" />
     <MESSAGE value="Crash fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Crash fix" />
+    <MESSAGE value="Fixed India Table Data&#10;Added Province Data of Indian States" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed India Table Data&#10;Added Province Data of Indian States" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -299,10 +305,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586864340502" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1586898427418">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1586899772948">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586898427418" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586899772948" />
     <state x="129" y="54" key="DiffContextDialog" timestamp="1586761963294">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -315,22 +321,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586593848882" />
-    <state width="1345" height="172" key="GridCell.Tab.0.bottom" timestamp="1586880167273">
+    <state width="1345" height="172" key="GridCell.Tab.0.bottom" timestamp="1586899442853">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="172" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586880167273" />
-    <state width="1345" height="172" key="GridCell.Tab.0.center" timestamp="1586880167272">
+    <state width="1345" height="172" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586899442853" />
+    <state width="1345" height="172" key="GridCell.Tab.0.center" timestamp="1586899442853">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="172" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586880167272" />
-    <state width="1345" height="172" key="GridCell.Tab.0.left" timestamp="1586880167272">
+    <state width="1345" height="172" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586899442853" />
+    <state width="1345" height="172" key="GridCell.Tab.0.left" timestamp="1586899442853">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="172" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586880167272" />
-    <state width="1345" height="172" key="GridCell.Tab.0.right" timestamp="1586880167272">
+    <state width="1345" height="172" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586899442853" />
+    <state width="1345" height="172" key="GridCell.Tab.0.right" timestamp="1586899442853">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="172" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586880167272" />
+    <state width="1345" height="172" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586899442853" />
     <state x="450" y="0" key="RollbackChangesDialog" timestamp="1586612080249">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -347,10 +353,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1586790477160" />
-    <state x="275" y="92" key="Vcs.Push.Dialog.v2" timestamp="1586871439849">
+    <state x="275" y="92" key="Vcs.Push.Dialog.v2" timestamp="1586899044409">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="92" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586871439849" />
+    <state x="275" y="92" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586899044409" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586430020160">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

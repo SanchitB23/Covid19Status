@@ -6,6 +6,7 @@ import moment from "moment";
 import ChartForIndianStates from "../../../Views/Charts/chartForIndianStates";
 import * as colors from "../../../constants/colors";
 import addCommas from "../../../functions/addCommas";
+import Loading from "../../../components/Loading";
 
 function IndianStateScreen(props) {
   const {name} = useParams()
@@ -146,11 +147,11 @@ function IndianStateScreen(props) {
         <h1 className="text-capitalize">{name}</h1>
         <h3>Active Cases: {stateTotal[0].active}</h3>
         {renderCards()}
-        {stateData.length > 0 &&
-        <div className="pt-4 text-center" style={{
-          display: 'flex',
-          justifyContent: 'center'
-        }}>{renderTable()}</div>
+        {stateData.length > 0 ?
+            <div className="pt-4 text-center" style={{
+              display: 'flex',
+              justifyContent: 'center'
+            }}>{renderTable()}</div> : <div className="pt-4"><Loading/></div>
         }
       </div>
   );
