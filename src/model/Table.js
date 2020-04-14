@@ -1,5 +1,5 @@
 export default class {
-  constructor(name, confirmed, newConfirmed, recovered, newRecovered, death, newDeath, slug) {
+  constructor(name, confirmed, newConfirmed, recovered, newRecovered, death, newDeath, slug, active) {
     this.name = name;
     this.totalConfirmed = confirmed;
     this.newConfirmed = newConfirmed;
@@ -8,5 +8,6 @@ export default class {
     this.totalDeath = death;
     this.newDeath = newDeath;
     this.slug = slug;
+    this.active = active;
   }
 }

@@ -25,7 +25,8 @@ function IndiaHome(props) {
           item.deltarecovered,
           item.deaths,
           item.deltadeaths,
-          item.statecode
+          item.statecode,
+          item.active
           )
       )
   const timeSeries = timeseries.map((item) => (

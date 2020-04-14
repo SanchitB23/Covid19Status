@@ -24,6 +24,13 @@ function Table(props) {
               <span><i className="fas fa-sort-up"/></span> : ''}
           </th>
 
+          {!props.world &&
+          <th scope="col" className="table-danger"
+              style={{backgroundColor: colors.active[1], color: 'white', letterSpacing: '1px'}}
+              onClick={() => setSortState(state => ({col: 'a', order: !state.order}))}>
+            Active {sortState.col === 'a' ? sortState.order ? <span><i className="fas fa-sort-down"/></span> :
+              <span><i className="fas fa-sort-up"/></span> : ''}
+          </th>}
           {/*<th scope="col" className="table-primary">Active</th>*/}
 
           <th scope="col" className="table-success"
@@ -41,7 +48,7 @@ function Table(props) {
           </th>
         </tr>
         </thead>
-        <tbody className="TableBody">
+        <tbody>
         {props.data
             // eslint-disable-next-line array-callback-return
             .sort((a, b) => {
@@ -67,6 +74,15 @@ function Table(props) {
                     return b.totalDeath - a.totalDeath
                   } else
                     return a.totalDeath - b.totalDeath
+                case "a":
+                  if (sortState.order) {
+                    return b.active - a.active
+                  } else return a.active - b.active
+                default:
+                  if (sortState.order) {
+                    return b.totalConfirmed - a.totalConfirmed
+                  } else
+                    return a.totalConfirmed - b.totalConfirmed
               }
             })
             .map((data, i) => {
@@ -75,18 +91,28 @@ function Table(props) {
                   <tr key={i} onClick={() => props.onRowClick(props.world ? data.slug : data.name, data.slug)}>
                     <td>{data.name}</td>
                     <td className="table-danger" style={{backgroundColor: colors.confirmed[1], color: 'white'}}>
+                      {data.newConfirmed > 0 &&
                       <span className="LatestCount">
                         <i className="fas fa-long-arrow-alt-up"/> {addCommas(data.newConfirmed.toString())}
-                      </span> {addCommas(data.totalConfirmed.toString())}
+                      </span>
+                      } {addCommas(data.totalConfirmed.toString())}
                     </td>
-                    <td className="table-success" style={{backgroundColor: colors.recovered[1], color: 'white'}}><span
-                        className="LatestCount">
+                    {!props.world &&
+                    <td className="table-primary" style={{backgroundColor: colors.active[1], color: 'white'}}>
+                      {addCommas(data.active.toString())}
+                    </td>
+                    }
+                    <td className="table-success" style={{backgroundColor: colors.recovered[1], color: 'white'}}>{
+                      data.newRecovered > 0 &&
+                      <span className="LatestCount">
                         <i className="fas fa-long-arrow-alt-up"/> {addCommas(data.newRecovered.toString())}
-                      </span> {addCommas(data.totalRecovered.toString())}</td>
-                    <td className="table-secondary" style={{backgroundColor: colors.death[1], color: 'white'}}><span
-                        className="LatestCount">
+                      </span>
+                    } {addCommas(data.totalRecovered.toString())}</td>
+                    <td className="table-secondary" style={{backgroundColor: colors.death[1], color: 'white'}}>{
+                      data.newDeath > 0 && <span className="LatestCount">
                         <i className="fas fa-long-arrow-alt-up"/> {addCommas(data.newDeath.toString())}
-                      </span> {addCommas(data.totalDeath.toString())}</td>
+                      </span>
+                    } {addCommas(data.totalDeath.toString())}</td>
                   </tr>
               )
             })}
