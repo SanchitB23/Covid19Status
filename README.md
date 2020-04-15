@@ -1,6 +1,6 @@
 ![Deploy to GitHub Pages](https://github.com/SanchitB23/Covid19Status/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)
- [![Dependency Check](https://david-dm.org/SanchitB23/Covid19Status.svg)](https://david-dm.org/SanchitB23/Covid19Status)
-####Versions
+ 
+#### Versions
 
 ReactJS [![npm version](https://badge.fury.io/js/react.svg)](https://badge.fury.io/js/react)
 
