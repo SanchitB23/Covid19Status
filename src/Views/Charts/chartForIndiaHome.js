@@ -3,7 +3,7 @@ import CanvasJSReact from '../../assets/canvasjs.react';
 
 const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
-function AreaChartForHome(props) {
+function ChartForIndiaHome(props) {
   const dataPoint0 = props.data.map((item) => {
     return {y: parseInt(item.count), x: new Date(item.date)}
   })
@@ -35,8 +35,6 @@ function AreaChartForHome(props) {
         // showInLegend: true,
         xValueType: 'dateTime',
         xValueFormatString: "D MMM",
-        // yValueFormatString: "#",
-        // mousemove: (e) => console.log('mouseover', e),
         dataPoints: dataPoint0,
       },
       {
@@ -48,8 +46,6 @@ function AreaChartForHome(props) {
         // showInLegend: true,
         xValueType: 'dateTime',
         xValueFormatString: "D MMM",
-        // yValueFormatString: "#",
-        // mouseover: (e) => console.log('mouseover', e),
         dataPoints: dataPoint1
       }
     ]
@@ -59,4 +55,4 @@ function AreaChartForHome(props) {
   );
 }
 
-export default AreaChartForHome;
+export default ChartForIndiaHome;

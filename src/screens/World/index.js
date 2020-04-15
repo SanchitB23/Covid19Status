@@ -5,6 +5,7 @@ import {fetchWorldData} from "../../store/actions/worldActions";
 import TableItem from "../../model/Table";
 import DisplayCumulativeData from "../../components/DisplayCumulativeData";
 import Loading from "../../components/Loading";
+import moment from "moment";
 
 function HomeScreen(props) {
   const dispatch = useDispatch();
@@ -15,7 +16,7 @@ function HomeScreen(props) {
     fetchData()
   }, [fetchData])
 
-  const worldData = useSelector(state => state.worldData)
+  const worldData = useSelector(state => state.worldData.home)
 
   const data = worldData.countries.map(item => new TableItem(
       item.Country,
@@ -43,7 +44,7 @@ function HomeScreen(props) {
             <div>
               <div>
                 <div className="LastUpdatedText">Last Updated
-                  : {new Date(Date.parse(worldData.lastUpdated)).toLocaleString()}</div>
+                  : {moment(Date.parse(worldData.lastUpdated)).format("LLL")}</div>
                 <DisplayCumulativeData data={cumulativeData} world={true}/>
               </div>
               <div id="world-table" className="TableScreenContainer"><Table data={data} world={true}/></div>

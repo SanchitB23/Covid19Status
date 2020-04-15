@@ -31,13 +31,13 @@ function Footer(props) {
 
                 <ul className="list-unstyled">
                   <li>
-                    <Link className="Footer-Link" to={"/"}>About Us</Link>
+                    <Link className="Footer-Link" to={"/about"}>About Us</Link>
                   </li>
                   <li>
                     <Link className="Footer-Link" to={"/mapbox"}>Mapbox</Link>
                   </li>
                   <li>
-                    <Link className="Footer-Link" to={"/"}>Helpful Links</Link>
+                    <Link className="Footer-Link" to={"/links"}>Helpful Links</Link>
                   </li>
                   <li>
                     <a href="https://github.com/SanchitB23/Covid19Status" className="Footer-Link">Link to Repository</a>
@@ -52,17 +52,18 @@ function Footer(props) {
 
                 <ul className="list-unstyled">
                   <li>
-                    <Link className="Footer-Link" to={"/"}>Github</Link>
+                    <Link className="Footer-Link" to={"https://github.com/SanchitB23"}>Github</Link>
                   </li>
                   <li>
-                    <Link className="Footer-Link" to={"/"}>StackOverflow</Link>
+                    <Link className="Footer-Link"
+                          to={"https://stackoverflow.com/users/9543569/sanchit-bhatnagar"}>StackOverflow</Link>
                   </li>
                   <li>
-                    <Link className="Footer-Link" to={"/"}>LinkedIn</Link>
+                    <Link className="Footer-Link" to={"https://www.linkedin.com/in/sanchitb23/"}>LinkedIn</Link>
                   </li>
-                  <li>
+                  {/*<li>
                     <Link className="Footer-Link" to={"/"}>Email ID</Link>
-                  </li>
+                  </li>*/}
                 </ul>
 
               </div>
@@ -75,7 +76,7 @@ function Footer(props) {
 
           </div>
 
-          <div className="footer-copyright text-center py-3">© 2020 Copyright:
+          <div className="footer-copyright text-center py-3">© 2020 Copyright :
             <a className="Footer-Link" href="https://github.com/SanchitB23">SanchitB23</a>
           </div>
 

@@ -25,12 +25,30 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3cebd4d-9c44-416f-8c15-db89c6d3d2c4" name="Default Changelist" comment="Minor Fix">
+    <list default="true" id="a3cebd4d-9c44-416f-8c15-db89c6d3d2c4" name="Default Changelist" comment="Added live Country Specific Data with Graphs&#10;Added Links to Footer">
+      <change afterPath="$PROJECT_DIR$/src/Views/WIP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/WIP.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/Charts/areaChartForHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/Charts/chartForIndiaHome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/Charts/barChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/Charts/chartForCountry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/Charts/lineChart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CumulativeTimeSeriesChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CumulativeTimeSeriesChart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/action-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/action-types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/other/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/todo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/India/IndiaStateWiseScreen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/India/IndiaStateWiseScreen/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/India/IndiaStateWiseScreen/statewiseIndia.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/India/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/India/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/MapBox/Mapbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MapBox/Mapbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/World/CountryWiseScreen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/World/CountryWiseScreen/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/World/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/World/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/worldActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/worldActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/worldReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/worldReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +61,8 @@
         <option value="Sass File" />
         <option value="SCSS File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="tsconfig.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -79,25 +97,28 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Programming Related\Workspace\ReactJs\covid19\src\assets\icons" />
-      <recent name="D:\Programming Related\Workspace\ReactJs\covid19\public" />
-      <recent name="D:\Programming Related\Workspace\ReactJs\covid19\src\Views" />
-      <recent name="D:\Programming Related\Workspace\ReactJs\covid19\src\components" />
-      <recent name="D:\Programming Related\Workspace\ReactJs\covid19\src\store\reducers" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Programming Related\Workspace\ReactJs\covid19\src\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programming Related\Workspace\ReactJs\covid19\src\Views" />
+      <recent name="D:\Programming Related\Workspace\ReactJs\covid19\src\assets" />
+      <recent name="D:\Programming Related\Workspace\ReactJs\covid19\src\exclude" />
+      <recent name="D:\Programming Related\Workspace\ReactJs\covid19\src\assets\icons" />
+      <recent name="D:\Programming Related\Workspace\ReactJs\covid19\public" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -152,7 +173,10 @@
       <workItem from="1586684849332" duration="2296000" />
       <workItem from="1586687202303" duration="1253000" />
       <workItem from="1586697686367" duration="20453000" />
-      <workItem from="1586783629762" duration="38772000" />
+      <workItem from="1586783629762" duration="39218000" />
+      <workItem from="1586936377392" duration="1815000" />
+      <workItem from="1586943260853" duration="3179000" />
+      <workItem from="1586946473676" duration="12983000" />
     </task>
     <task id="LOCAL-00001" summary="World Data Table Added -&gt; Live API connected&#10;Mapbox Added">
       <created>1586438036238</created>
@@ -231,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586899031625</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Minor Fix , Handle 404">
+      <created>1586899874272</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1586899874272</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,12 +306,19 @@
     <MESSAGE value="Minor Fixes, Added statewiseIndia Screen" />
     <MESSAGE value="Crash fix" />
     <MESSAGE value="Fixed India Table Data&#10;Added Province Data of Indian States" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed India Table Data&#10;Added Province Data of Indian States" />
+    <MESSAGE value="Minor Fix , Handle 404" />
+    <MESSAGE value="Added live Country Specific Data with Graphs" />
+    <MESSAGE value="Added live Country Specific Data with Graphs&#10;Added Links to Footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added live Country Specific Data with Graphs&#10;Added Links to Footer" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="551" y="274" key="#ESLint" timestamp="1586947887789">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="551" y="274" key="#ESLint/0.0.1366.728@0.0.1366.728" timestamp="1586947887789" />
     <state x="275" y="22" key="#File_Watchers" timestamp="1586277130740">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -305,10 +343,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586864340502" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1586899772948">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1586963010716">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586899772948" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586963010716" />
     <state x="129" y="54" key="DiffContextDialog" timestamp="1586761963294">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -321,22 +359,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586593848882" />
-    <state width="1345" height="172" key="GridCell.Tab.0.bottom" timestamp="1586899442853">
+    <state width="1345" height="172" key="GridCell.Tab.0.bottom" timestamp="1586963044545">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="172" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586899442853" />
-    <state width="1345" height="172" key="GridCell.Tab.0.center" timestamp="1586899442853">
+    <state width="1345" height="172" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586963044545" />
+    <state width="1345" height="172" key="GridCell.Tab.0.center" timestamp="1586963044544">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="172" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586899442853" />
-    <state width="1345" height="172" key="GridCell.Tab.0.left" timestamp="1586899442853">
+    <state width="1345" height="172" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586963044544" />
+    <state width="1345" height="172" key="GridCell.Tab.0.left" timestamp="1586963044544">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="172" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586899442853" />
-    <state width="1345" height="172" key="GridCell.Tab.0.right" timestamp="1586899442853">
+    <state width="1345" height="172" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586963044544" />
+    <state width="1345" height="172" key="GridCell.Tab.0.right" timestamp="1586963044544">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="172" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586899442853" />
+    <state width="1345" height="172" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586963044544" />
     <state x="450" y="0" key="RollbackChangesDialog" timestamp="1586612080249">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -345,18 +383,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586687379893" />
-    <state x="404" y="105" width="552" height="540" key="StructurePopup" timestamp="1586787609218">
+    <state x="404" y="105" width="552" height="540" key="StructurePopup" timestamp="1586959239913">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="404" y="105" width="552" height="540" key="StructurePopup/0.0.1366.728@0.0.1366.728" timestamp="1586787609218" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1586790477160">
+    <state x="404" y="105" width="552" height="540" key="StructurePopup/0.0.1366.728@0.0.1366.728" timestamp="1586959239913" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1586943360050">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1586790477160" />
-    <state x="275" y="92" key="Vcs.Push.Dialog.v2" timestamp="1586899044409">
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1586943360050" />
+    <state x="275" y="92" key="Vcs.Push.Dialog.v2" timestamp="1586899876159">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="92" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586899044409" />
+    <state x="275" y="92" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586899876159" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586430020160">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -369,10 +407,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="491" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1586637293455" />
-    <state x="391" y="83" width="583" height="562" key="find.popup" timestamp="1586882365259">
+    <state x="391" y="83" width="583" height="562" key="find.popup" timestamp="1586961810056">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="83" width="583" height="562" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1586882365259" />
+    <state x="391" y="83" width="583" height="562" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1586961810056" />
     <state x="397" y="137" key="git4idea.merge.GitPullDialog" timestamp="1586462458042">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -385,13 +423,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="328" y="206" key="git4idea.ui.GitUnstashDialog/0.0.1366.728@0.0.1366.728" timestamp="1586632789991" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1586862849214">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1586946723128">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586862849214" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1586893881080">
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586946723128" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1586961900971">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1586893881080" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1586961900971" />
   </component>
 </project>

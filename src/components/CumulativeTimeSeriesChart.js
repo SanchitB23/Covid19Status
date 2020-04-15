@@ -1,6 +1,6 @@
 import React from 'react';
 import './CumulativeTimeSeriesChart.css'
-import AreaChartForHome from "../Views/Charts/areaChartForHome";
+import ChartForIndiaHome from "../Views/Charts/chartForIndiaHome";
 import * as colors from "../constants/colors";
 
 function CumulativeTimeSeriesChart(props) {
@@ -10,13 +10,13 @@ function CumulativeTimeSeriesChart(props) {
   return (
       <div className="AreaChartsContainer row">
         <div className="col-md-8 col-lg-3 col-sm-12 p-2 card m-md-1 m-sm-1">
-          <AreaChartForHome data={confirmed} title="Confirmed Cases" color={colors.confirmed}/>
+          <ChartForIndiaHome data={confirmed} title="Confirmed Cases" color={colors.confirmed}/>
         </div>
         <div className="col-md-8 col-lg-3 col-sm-12 p-2 card m-md-1 m-sm-1">
-          <AreaChartForHome data={recovered} title={"Recovered Cases"} color={colors.recovered}/>
+          <ChartForIndiaHome data={recovered} title={"Recovered Cases"} color={colors.recovered}/>
         </div>
         <div className="col-md-8 col-lg-3 col-sm-12 p-2 card m-md-1 m-sm-1">
-          <AreaChartForHome data={death} title={"Death Cases"} color={colors.death}/>
+          <ChartForIndiaHome data={death} title={"Death Cases"} color={colors.death}/>
         </div>
       </div>
   );

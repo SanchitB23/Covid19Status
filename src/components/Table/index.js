@@ -4,6 +4,7 @@ import Table from "../../Views/table";
 import './index.css'
 import {useDispatch} from "react-redux";
 import {fetchIndianStates} from "../../store/actions/indiaActions";
+import {fetchCountryData} from "../../store/actions/worldActions";
 
 function TableComponent(props) {
   const [searchValue, setSearchValue] = useState('')
@@ -20,7 +21,7 @@ function TableComponent(props) {
 
 
   const onRowClickHandler = (name, slug) => {
-    if (props.world) console.log("Country Data")//dispatch(fetchIndianStates)
+    if (props.world) dispatch(fetchCountryData(slug))
     else dispatch(fetchIndianStates(name, slug))
     props.world ? history.push('/country/' + slug)
         : history.push('/india/state/' + name)

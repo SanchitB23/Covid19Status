@@ -48,7 +48,7 @@ function IndiaHome(props) {
               <div>
                 <div>
                   <div className="LastUpdatedText">Last Updated
-                    : {statewise[0].lastupdatedtime}</div>
+                    : {moment(statewise[0].lastupdatedtime, "DD/MM/YYYY HH:mm:ss").format("LLL")}</div>
                   <DisplayCumulativeData data={tableData[0]} world={false}/>
                   <CumulativeTimeSeriesChart data={timeSeries}/>
                 </div>

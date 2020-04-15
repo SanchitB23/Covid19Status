@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
-import {useParams} from "react-router-dom";
+import {useHistory, useParams} from "react-router-dom";
 import {useSelector} from "react-redux";
-import './statewiseIndia.css'
 import moment from "moment";
 import ChartForIndianStates from "../../../Views/Charts/chartForIndianStates";
 import * as colors from "../../../constants/colors";
@@ -10,6 +9,7 @@ import Loading from "../../../components/Loading";
 
 function IndianStateScreen(props) {
   const {name} = useParams()
+  const history = useHistory()
   const {stateData, stateTimeLine} = useSelector(state => state.indiaData.statewise)
   const [sortState, setSortState] = useState({
     col: 'c', order: true
@@ -140,21 +140,26 @@ function IndianStateScreen(props) {
     )
   }
 
-  return (
-      <div className="HomeScreenContainer">
-        <div className="LastUpdatedText">Last Updated
-          : {stateTotal[0].lastupdatedtime}</div>
-        <h1 className="text-capitalize">{name}</h1>
-        <h3>Active Cases: {stateTotal[0].active}</h3>
-        {renderCards()}
-        {stateData.length > 0 ?
-            <div className="pt-4 text-center" style={{
-              display: 'flex',
-              justifyContent: 'center'
-            }}>{renderTable()}</div> : <div className="pt-4"><Loading/></div>
-        }
-      </div>
-  );
+  try {
+    return (
+        <div className="HomeScreenContainer">
+          <div className="LastUpdatedText">Last Updated
+            : {stateTotal[0].lastupdatedtime}</div>
+          <h1 className="text-capitalize">{name}</h1>
+          <h3>Active Cases: {stateTotal[0].active}</h3>
+          {renderCards()}
+          {stateData.length > 0 ?
+              <div className="pt-4 text-center" style={{
+                display: 'flex',
+                justifyContent: 'center'
+              }}>{renderTable()}</div> : <div className="pt-4"><Loading/></div>
+          }
+        </div>
+    );
+  } catch (e) {
+    history.push('/india')
+    return <div/>
+  }
 }
 
 export default IndianStateScreen;

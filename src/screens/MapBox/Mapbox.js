@@ -38,7 +38,6 @@ function App() {
   // Initialize our map
   useEffect(() => {
     if (data) {
-      // console.log("API Response Data", data)
       const map = new mapboxgl.Map({
         container: mapboxElRef.current,
         style: 'mapbox://styles/notalemesa/ck8dqwdum09ju1ioj65e3ql3k',
